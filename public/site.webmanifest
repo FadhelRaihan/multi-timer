@@ -1,0 +1,21 @@
+{
+  "name": "MultiTimer — Multiple Timer Online",
+  "short_name": "MultiTimer",
+  "description": "Free multiple timer online tool. Run unlimited timers simultaneously, save timer sets, custom sounds. No login required.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#080808",
+  "theme_color": "#080808",
+  "icons": [
+    {
+      "src": "/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

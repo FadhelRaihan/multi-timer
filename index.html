@@ -1,14 +1,97 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+
+    <!-- ── VIEWPORT ── -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="google-site-verification" content="2i6J4tfcd3A-Qt-saIWFFcVZTZE4yb01njXGxGcQae0" />
-    <title>Multi Timer</title>
+
+    <!-- ── PRIMARY SEO ── -->
+    <title>Multiple Timer Online — Run Many Timers at Once | MultiTimer</title>
+    <meta name="description" content="Free multiple timer online tool. Run, manage, and save unlimited timers simultaneously in one tab. No login required. Perfect for cooking, studying, workouts, and productivity." />
+    <meta name="keywords" content="multiple timer online, multiple timers, online timer, free timer, countdown timer, run multiple timers, timer sets, productivity timer, study timer, cooking timer" />
+    <meta name="author" content="MultiTimer" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://multitimer.vercel.app/" />
+
+    <!-- ── OPEN GRAPH (Facebook, LinkedIn, WhatsApp) ── -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://multitimer.vercel.app/" />
+    <meta property="og:title" content="Multiple Timer Online — Run Many Timers at Once | MultiTimer" />
+    <meta property="og:description" content="Free multiple timer online tool. Run unlimited timers simultaneously, save timer sets, and get custom sound notifications. No login required." />
+    <meta property="og:image" content="https://multitimer.vercel.app/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="MultiTimer — Multiple Timer Online Tool" />
+    <meta property="og:site_name" content="MultiTimer" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- ── TWITTER CARD ── -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://multitimer.vercel.app/" />
+    <meta name="twitter:title" content="Multiple Timer Online — Run Many Timers at Once" />
+    <meta name="twitter:description" content="Free tool to run multiple timers simultaneously. Save timer sets, custom sounds, no login needed." />
+    <meta name="twitter:image" content="https://multitimer.vercel.app/og-image.png" />
+
+    <!-- ── FAVICON ── -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
+    <!-- ── PWA / THEME ── -->
+    <meta name="theme-color" content="#080808" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- ── STRUCTURED DATA (JSON-LD) ── -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "MultiTimer",
+      "url": "https://multitimer.vercel.app",
+      "description": "Free multiple timer online tool. Run, manage, and save unlimited timers simultaneously in one tab. No login required.",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "Any",
+      "browserRequirements": "Requires JavaScript",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "featureList": [
+        "Run multiple timers simultaneously",
+        "Save and reuse timer sets",
+        "Custom notification sounds",
+        "No login required",
+        "Works offline via localStorage"
+      ],
+      "screenshot": "https://multitimer.vercel.app/og-image.png",
+      "creator": {
+        "@type": "Person",
+        "name": "USERNAME"
+      }
+    }
+    </script>
+
+    <!-- ── PERFORMANCE: PRECONNECT ── -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   </head>
   <body>
     <div id="root"></div>
+
+    <!-- Fallback for no-JS (juga membantu SEO crawler) -->
+    <noscript>
+      <h1>MultiTimer — Multiple Timer Online</h1>
+      <p>
+        Free multiple timer online tool. Run, manage, and save unlimited timers
+        simultaneously in one tab. No login required. Please enable JavaScript
+        to use this app.
+      </p>
+    </noscript>
+
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
