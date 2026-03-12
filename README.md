@@ -2,7 +2,7 @@
 
 A modern, open-source web app to run multiple timers simultaneously — with saveable timer sets, custom notification sounds, and a clean dark UI. No login, no backend, no database required.
 
-**[Live Demo →]([https://multitimer.vercel.app](https://multi-timer-nine-kappa.vercel.app/))** 
+**[Live Demo →](https://multi-timer-nine-kappa.vercel.app/)** 
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](./CONTRIBUTING.md)

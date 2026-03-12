@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://multitimer.vercel.app/sitemap.xml
+Sitemap: https://multi-timer-nine-kappa.vercel.app/sitemap.xml
