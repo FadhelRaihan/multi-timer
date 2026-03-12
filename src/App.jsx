@@ -1335,6 +1335,238 @@ export default function App() {
           onClose={() => setEditTimer(null)}
         />
       )}
+
+      {/* ── FOOTER ── */}
+      {view === "sets" && (
+        <footer
+          style={{
+            borderTop: `1px solid ${C.border}`,
+            padding: "32px 28px 28px",
+            marginTop: 16,
+          }}
+        >
+          <div style={{ maxWidth: 900, margin: "0 auto" }}>
+            <div
+              style={{
+                border: `1px solid ${C.border}`,
+                borderRadius: 16,
+                padding: "28px 28px 24px",
+                position: "relative",
+                overflow: "hidden",
+              }}
+            >
+              {/* badge */}
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: 8,
+                  marginBottom: 10,
+                }}
+              >
+                <div
+                  style={{
+                    width: 6,
+                    height: 6,
+                    borderRadius: "50%",
+                    background: C.green,
+                  }}
+                />
+                <span
+                  style={{
+                    fontSize: 11,
+                    fontWeight: 700,
+                    color: C.green,
+                    letterSpacing: 2,
+                    textTransform: "uppercase",
+                  }}
+                >
+                  Open Source
+                </span>
+              </div>
+
+              {/* heading */}
+              <h2
+                style={{
+                  margin: "0 0 10px",
+                  fontSize: 22,
+                  fontWeight: 800,
+                  color: C.white,
+                  lineHeight: 1.2,
+                  letterSpacing: -0.3,
+                }}
+              >
+                Help make MultiTimer{" "}
+                <span style={{ color: C.green }}>even better.</span>
+              </h2>
+
+              <p
+                style={{
+                  margin: "0 0 20px",
+                  fontSize: 13,
+                  color: C.muted,
+                  lineHeight: 1.6,
+                  maxWidth: 420,
+                }}
+              >
+                Free and open source — bug fixes, new features, or docs
+                improvements are all welcome.
+              </p>
+
+              {/* Buttons */}
+              <div
+                style={{
+                  display: "flex",
+                  flexWrap: "wrap",
+                  gap: 8,
+                  marginBottom: 20,
+                }}
+              >
+                {[
+                  {
+                    label: "Contribute on GitHub",
+                    href: `https://github.com/FadhelRaihan/multi-timer`,
+                    primary: true,
+                  },
+                  {
+                    label: "Report a Bug",
+                    href: `https://github.com/FadhelRaihan/multi-timer/issues/new?template=bug_report.md`,
+                  },
+                  {
+                    label: "Request a Feature",
+                    href: `https://github.com/FadhelRaihan/multi-timer/issues/new?template=feature_request.md`,
+                  },
+                ].map((btn) => (
+                  <a
+                    key={btn.label}
+                    href={btn.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                      display: "inline-flex",
+                      alignItems: "center",
+                      gap: 6,
+                      background: btn.primary ? C.green : "transparent",
+                      color: btn.primary ? "#000" : C.white,
+                      border: btn.primary ? "none" : `1px solid ${C.border2}`,
+                      borderRadius: 8,
+                      padding: "8px 16px",
+                      fontSize: 12,
+                      fontWeight: 700,
+                      fontFamily: "inherit",
+                      textDecoration: "none",
+                    }}
+                  >
+                    {btn.label}
+                  </a>
+                ))}
+              </div>
+
+              {/* Info Cards */}
+              <div
+                style={{
+                  display: "grid",
+                  gridTemplateColumns: "repeat(3,1fr)",
+                  gap: 8,
+                }}
+              >
+                {[
+                  ["MIT", "Free to use & modify"],
+                  ["PRs", "All skill levels welcome"],
+                  ["React", "Vite + localStorage"],
+                ].map(([t, s]) => (
+                  <div
+                    key={t}
+                    style={{
+                      background: C.surface,
+                      border: `1px solid ${C.border}`,
+                      borderRadius: 10,
+                      padding: "10px 14px",
+                    }}
+                  >
+                    <div
+                      style={{
+                        fontSize: 13,
+                        fontWeight: 700,
+                        color: C.white,
+                        marginBottom: 2,
+                      }}
+                    >
+                      {t}
+                    </div>
+                    <div style={{ fontSize: 11, color: C.muted }}>{s}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Bottom bar */}
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "space-between",
+                alignItems: "center",
+                marginTop: 16,
+                flexWrap: "wrap",
+                gap: 10,
+              }}
+            >
+              <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+                <div
+                  style={{
+                    width: 22,
+                    height: 22,
+                    borderRadius: 6,
+                    // background: C.green,
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    fontSize: 12,
+                  }}
+                >
+                  <Timer />
+                </div>
+                <span style={{ fontSize: 13, fontWeight: 700, color: C.white }}>
+                  MultiTimer
+                </span>
+                <span style={{ fontSize: 12, color: C.muted2 }}>
+                  — free forever
+                </span>
+              </div>
+              <div style={{ display: "flex", gap: 16 }}>
+                {[
+                  ["GitHub", "https://github.com/FadhelRaihan/multi-timer"],
+                  [
+                    "Contributing",
+                    "https://github.com/FadhelRaihan/multi-timer/blob/main/CONTRIBUTING.md",
+                  ],
+                  [
+                    "License",
+                    "https://github.com/FadhelRaihan/multi-timer/blob/main/LICENSE",
+                  ],
+                ].map(([l, h]) => (
+                  <a
+                    key={l}
+                    href={h}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                      fontSize: 12,
+                      color: C.muted,
+                      textDecoration: "none",
+                    }}
+                  >
+                    {l}
+                  </a>
+                ))}
+              </div>
+              <span style={{ fontSize: 11, color: C.muted2 }}>
+                © 2026 MultiTimer
+              </span>
+            </div>
+          </div>
+        </footer>
+      )}
     </div>
   );
 }
