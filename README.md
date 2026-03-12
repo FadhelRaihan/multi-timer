@@ -2,7 +2,12 @@
 
 A modern, open-source web app to run multiple timers simultaneously — with saveable timer sets, custom notification sounds, and a clean dark UI. No login, no backend, no database required.
 
-**[Live Demo →](https://multi-timer-nine-kappa.vercel.app/)** 
+**[Live Demo →]([https://multitimer.vercel.app](https://multi-timer-nine-kappa.vercel.app/))** 
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](./CONTRIBUTING.md)
+[![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](./CONTRIBUTING.md)
+[![Open Source](https://img.shields.io/badge/Open%20Source-%E2%9D%A4-red.svg)](https://github.com/USERNAME/multitimer)
 
 ---
 
@@ -122,13 +127,73 @@ Custom sounds disimpan di `localStorage` browser sebagai base64.
 
 ## 🤝 Contributing
 
-Kontribusi sangat welcome! Silakan:
+MultiTimer adalah project open source dan **kontribusi dari siapapun sangat welcome!**
+Baik itu bug fix, fitur baru, perbaikan dokumentasi, atau improvement UI — semuanya diterima.
 
-1. Fork repository ini
-2. Buat branch baru: `git checkout -b feat/nama-fitur`
-3. Commit perubahan: `git commit -m "feat: tambah fitur X"`
-4. Push ke branch: `git push origin feat/nama-fitur`
-5. Buat Pull Request
+### Cara Berkontribusi
+
+```bash
+# 1. Fork repo ini via tombol Fork di GitHub
+
+# 2. Clone fork kamu
+git clone https://github.com/FadhelRaihan/multi-timer.git
+cd multitimer
+
+# 3. Tambahkan upstream
+git remote add upstream https://github.com/FadhelRaihan/multi-timer.git
+
+# 4. Install dependencies & jalankan lokal
+npm install
+npm run dev
+
+# 5. Buat branch baru
+git checkout -b feat/nama-fitur
+
+# 6. Kerjakan perubahan, lalu commit
+git add .
+git commit -m "feat: deskripsi perubahan"
+
+# 7. Push & buat Pull Request
+git push origin feat/nama-fitur
+```
+
+> Semua Pull Request akan di-review terlebih dahulu sebelum di-merge ke branch `main`.
+
+### Tipe Kontribusi yang Diterima
+
+| Tipe | Contoh |
+|------|--------|
+| 🐛 Bug fix | Perbaiki animasi ring timer |
+| ✨ Fitur baru | Tambah notifikasi browser |
+| 💄 UI improvement | Perbaiki tampilan mobile |
+| 📝 Dokumentasi | Update README, tambah komentar kode |
+| ⚡ Performa | Optimasi re-render komponen |
+| ♻️ Refactor | Pisah komponen besar jadi lebih kecil |
+
+### Commit Convention
+
+Gunakan format [Conventional Commits](https://www.conventionalcommits.org/):
+
+```
+feat: tambah fitur drag-drop reorder timer
+fix: ring tidak full saat timer baru dimulai
+docs: update panduan custom sound di README
+style: perbaiki spacing card di tampilan mobile
+```
+
+### Panduan Lengkap
+
+Baca **[CONTRIBUTING.md](./CONTRIBUTING.md)** untuk panduan lengkap termasuk:
+- Setup project lokal
+- Standar kode yang digunakan
+- Pull Request guidelines
+- Cara melaporkan bug atau mengusulkan fitur
+
+### Melaporkan Bug & Mengusulkan Fitur
+
+- 🐛 **Bug?** → [Buat Bug Report](../../issues/new?template=bug_report.md)
+- ✨ **Ide fitur?** → [Buat Feature Request](../../issues/new?template=feature_request.md)
+- 💬 **Pertanyaan umum?** → [Buka Discussion](../../discussions)
 
 ---
 
@@ -147,3 +212,8 @@ Distributed under the **MIT License** — lihat file [LICENSE](./LICENSE) untuk 
 ---
 
 <p align="center">Made with ❤️ — open source, free forever</p>
+<p align="center">
+  <a href="../../issues/new?template=bug_report.md">🐛 Report Bug</a> ·
+  <a href="../../issues/new?template=feature_request.md">✨ Request Feature</a> ·
+  <a href="./CONTRIBUTING.md">🤝 Contribute</a>
+</p>
