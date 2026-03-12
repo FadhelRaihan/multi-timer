@@ -11,7 +11,7 @@ A modern, open-source web app to run multiple timers simultaneously — with sav
 
 ---
 
-## ✨ Features
+## ✨ Features ✨
 
 - **Multiple Timers** — run as many timers as you need at the same time
 - **Timer Sets** — group timers into sets, save them, and reuse anytime
